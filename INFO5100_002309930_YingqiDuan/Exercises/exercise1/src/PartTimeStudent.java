@@ -1,4 +1,4 @@
-// PartTime.java
+// PartTimeStudent.java
 import java.util.ArrayList;
 
 public class PartTimeStudent extends Student {
