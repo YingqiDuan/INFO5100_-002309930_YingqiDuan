@@ -1,0 +1,3 @@
+Create a multi-threaded Java program to do the following: (Due Date: 8th Nov, 11:53pm)  
+Part-A: First thread will calculate first 25 prime numbers, second thread will calculate first 50 Fibonacci series numbers and third thread will calculate factorials for first 50 numbers. Introduce random delay between 100-500msec between each calculation. Print appropriate statements to demonstrate timestamp, thread number, thread name and result of each calculation on the console.  
+Part-B: Repeat the above with use of ThreadPool (5 threads total) and assigning each individual calculation to each thread. For example, calculating 22nd prime number could be done by one thread and 23rd prime number could be done by another thread. 
