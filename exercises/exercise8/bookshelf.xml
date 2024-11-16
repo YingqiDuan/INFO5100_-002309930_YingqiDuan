@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<BookShelf>
+                
+    
+    
+    <Book>
+                                
+        
+        
+        <title>The Great Gatsby</title>
+                                
+        
+        
+        <publishedYear>1925</publishedYear>
+                                
+        
+        
+        <numberOfPages>218</numberOfPages>
+                                
+        
+        
+        <authors>
+                                                
+            
+            
+            <author>F. Scott Fitzgerald</author>
+                                            
+        
+        
+        </authors>
+                            
+    
+    
+    </Book>
+                
+    
+    
+    <Book>
+                                
+        
+        
+        <title>1984</title>
+                                
+        
+        
+        <publishedYear>1949</publishedYear>
+                                
+        
+        
+        <numberOfPages>328</numberOfPages>
+                                
+        
+        
+        <authors>
+                                                
+            
+            
+            <author>George Orwell</author>
+                                            
+        
+        
+        </authors>
+                            
+    
+    
+    </Book>
+                
+    
+    
+    <Book>
+                                
+        
+        
+        <title>To Kill a Mockingbird</title>
+                                
+        
+        
+        <publishedYear>1960</publishedYear>
+                                
+        
+        
+        <numberOfPages>281</numberOfPages>
+                                
+        
+        
+        <authors>
+                                                
+            
+            
+            <author>Harper Lee</author>
+                                            
+        
+        
+        </authors>
+                            
+    
+    
+    </Book>
+                
+    
+    
+    <Book>
+                                
+        
+        
+        <title>Pride and Prejudice</title>
+                                
+        
+        
+        <publishedYear>1813</publishedYear>
+                                
+        
+        
+        <numberOfPages>279</numberOfPages>
+                                
+        
+        
+        <authors>
+                                                
+            
+            
+            <author>Jane Austen</author>
+                                            
+        
+        
+        </authors>
+                            
+    
+    
+    </Book>
+            
+    
+    
+    <Book>
+                        
+        
+        <title>Pride and Prejudice</title>
+                        
+        
+        <publishedYear>1813</publishedYear>
+                        
+        
+        <numberOfPages>279</numberOfPages>
+                        
+        
+        <authors>
+                                    
+            
+            <author>Jane Austen</author>
+                                
+        
+        </authors>
+                    
+    
+    </Book>
+        
+    
+    <Book>
+                
+        <title>Pride and Prejudice</title>
+                
+        <publishedYear>1813</publishedYear>
+                
+        <numberOfPages>279</numberOfPages>
+                
+        <authors>
+                        
+            <author>Jane Austen</author>
+                    
+        </authors>
+            
+    </Book>
+    
+    <Book>
+        <title>Pride and Prejudice</title>
+        <publishedYear>1813</publishedYear>
+        <numberOfPages>279</numberOfPages>
+        <authors>
+            <author>Jane Austen</author>
+        </authors>
+    </Book>
+</BookShelf>
