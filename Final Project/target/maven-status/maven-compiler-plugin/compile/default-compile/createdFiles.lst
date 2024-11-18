@@ -1,0 +1,9 @@
+model/ImageProperties$MetadataData.class
+util/CustomFilterDialog.class
+model/ImageProperties.class
+util/ImageFilter.class
+util/ImageProcessor.class
+ImageApp.class
+util/ImageConverter.class
+model/ImageModel.class
+controller/MainController.class

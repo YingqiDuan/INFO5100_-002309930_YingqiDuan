@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<!--
+    Main.fxml defines the user interface for the Image Processing Application.
+    It uses a BorderPane as the root layout, organizing the UI into top, center, and right sections.
+    The UI includes a menu bar, a scrollable thumbnails pane, and a right-side control panel
+    for image properties, format conversion, downloading, and applying filters.
+-->
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.MainController">
+
+    <!-- Top Section: Menu Bar -->
+    <top>
+        <MenuBar>
+            <!-- File Menu -->
+            <Menu text="File">
+                <MenuItem text="Upload Images" onAction="#handleUploadImages" />
+                <SeparatorMenuItem />
+                <MenuItem text="Exit" onAction="#handleExit" />
+            </Menu>
+            <!-- Help Menu -->
+            <Menu text="Help">
+                <MenuItem text="About" onAction="#handleAbout" />
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <!-- Center Section: Thumbnails Display -->
+    <center>
+        <ScrollPane fitToWidth="true" fitToHeight="true">
+            <!-- FlowPane to arrange image thumbnails with horizontal and vertical gaps -->
+            <FlowPane fx:id="thumbnailsPane" hgap="10" vgap="10">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10" />
+                </padding>
+            </FlowPane>
+        </ScrollPane>
+    </center>
+
+    <!-- Right Section: Controls and Properties -->
+    <right>
+        <VBox spacing="20" alignment="TOP_CENTER">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10" />
+            </padding>
+
+            <!-- Image Properties Section -->
+            <VBox spacing="5" alignment="CENTER_LEFT">
+                <Label text="Image Properties">
+                    <font>
+                        <Font name="System Bold" size="16" />
+                    </font>
+                </Label>
+                <TextArea fx:id="propertiesArea" editable="false" wrapText="true" prefWidth="250" prefHeight="150">
+                    <tooltip>
+                        <Tooltip text="Displays properties of the selected image." />
+                    </tooltip>
+                </TextArea>
+            </VBox>
+
+            <Separator />
+
+            <!-- Format Conversion Section -->
+            <VBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Format Conversion">
+                    <font>
+                        <Font name="System Bold" size="16" />
+                    </font>
+                </Label>
+                <VBox spacing="5">
+                    <CheckBox fx:id="pngCheckBox" text="PNG" />
+                    <CheckBox fx:id="jpegCheckBox" text="JPEG" />
+                    <CheckBox fx:id="bmpCheckBox" text="BMP" />
+                    <CheckBox fx:id="gifCheckBox" text="GIF" />
+                </VBox>
+                <Button text="Convert Selected Images" onAction="#handleConvertSelected" maxWidth="Infinity">
+                    <tooltip>
+                        <Tooltip text="Convert the selected images to the chosen formats." />
+                    </tooltip>
+                </Button>
+            </VBox>
+
+            <Separator />
+
+            <!-- Download Image Section -->
+            <VBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Download Image">
+                    <font>
+                        <Font name="System Bold" size="16" />
+                    </font>
+                </Label>
+                <Button text="Download Selected Images" onAction="#handleDownloadSelected" maxWidth="Infinity">
+                    <tooltip>
+                        <Tooltip text="Download the currently selected images." />
+                    </tooltip>
+                </Button>
+            </VBox>
+
+            <Separator />
+
+            <!-- Apply Filter Section -->
+            <VBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Apply Filter">
+                    <font>
+                        <Font name="System Bold" size="16" />
+                    </font>
+                </Label>
+                <VBox spacing="5">
+                    <CheckBox fx:id="grayscaleCheckBox" text="Grayscale" />
+                    <CheckBox fx:id="sepiaCheckBox" text="Sepia" />
+                    <CheckBox fx:id="blurCheckBox" text="Blur" />
+                </VBox>
+                <Button text="Apply Filters" onAction="#handleApplyFilters" maxWidth="Infinity">
+                    <tooltip>
+                        <Tooltip text="Apply selected filters to the selected images." />
+                    </tooltip>
+                </Button>
+                <Button text="Apply Custom Filter" onAction="#handleApplyCustomFilter"/>
+            </VBox>
+        </VBox>
+    </right>
+</BorderPane>
